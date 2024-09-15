@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Submit Order After Registration(failed)">
+    <classes>
+      <class name="practise.tests.LoginAfterRegistrationValidation">
+        <methods>
+          <include name="loginValidationTest"/>
+          <include name="launchApplication"/>
+          <include name="loginAfterRegistrationTest" invocation-numbers="0 1 3 4 5 6"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- practise.tests.LoginAfterRegistrationValidation -->
+      <class name="practise.tests.SubmitOrderTest">
+        <methods>
+          <include name="orderHistoryTest"/>
+          <include name="submitOrderTest" invocation-numbers="0"/>
+          <include name="validateCorrectNumberOfOrdersTest"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- practise.tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order After Registration(failed) -->
+</suite> <!-- Failed suite [Suite] -->

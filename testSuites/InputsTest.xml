@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel = "methods" name="Inputs test">
+	<test thread-count="5" name="Registration Inputs test">
+		<classes>
+			<class name="practise.tests.RegistrationInputsValidation" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Login Inputs test">
+		<classes>
+			<class name="practise.tests.LoginInputsValidation" />
+		</classes>
+	</test> <!-- Test -->
+		<test thread-count="5" name="Forgot Password Inputs test">
+		<classes>
+			<class name="practise.tests.ForgotPasswordValidation" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
